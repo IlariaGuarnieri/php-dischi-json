@@ -4,7 +4,7 @@ createApp ({
 //qui siamo dentro al componente
   data() {
     return {
-      title : 'PHP DISCHI JSON',
+      title : 'BEST SELLER MUSIC',
       apiUrl : 'server.php',
       dischi : []
     }
