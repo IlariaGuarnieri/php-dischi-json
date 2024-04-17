@@ -11,7 +11,7 @@ include __DIR__ . '/partials/head.php'
 
       <div v-for="(disco, index) in dischi"
       :key="`array${index}`"
-      class="card m-4" style="width: 18rem;">
+      class="card m-4" style="width: 18rem; height: 25rem;">
         <img :src="disco.poster" class="card-img-top" alt="">
         <div class="card-body">
           <h5 class="card-title">{{disco.title}}</h5>
