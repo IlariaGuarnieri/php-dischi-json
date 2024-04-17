@@ -4,15 +4,17 @@ createApp ({
 //qui siamo dentro al componente
   data() {
     return {
-      title : 'To do list',
-      apiUrl : 'server.php'
+      title : 'PHP DISCHI JSON',
+      apiUrl : 'server.php',
+      dischi : []
     }
   },
 
   methods:{
     getApi(apiUrl){
       axios.get(apiUrl).then(result=>{
-        console.log(result.data)
+        this.dischi=result.data
+        console.log(this.dischi);
       })
     }
   },
