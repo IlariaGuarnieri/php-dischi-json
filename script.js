@@ -6,7 +6,13 @@ createApp ({
     return {
       title : 'BEST SELLER MUSIC',
       apiUrl : 'server.php',
-      dischi : []
+      dischi : [],
+      newDisco:{
+        title:'',
+        author: '',
+        year: '',
+        genre: '',
+      }
     }
   },
 
@@ -16,6 +22,9 @@ createApp ({
         this.dischi=result.data
         console.log(this.dischi);
       })
+    },
+    addNewDisco(){
+      console.log(this.newDisco);
     }
   },
 
