@@ -50,8 +50,9 @@ include __DIR__ . '/partials/head.php'
       type="text" 
       placeholder="Genere">
 
+<!-- @click.stop="" serve ad impedire all'evento di propagarsi oltre l'elemento in cui è applicato -->
       <button 
-      @click.stop="addNewDisco"
+      @click.stop="addNewDisco"  
       class="btn btn-outline-primary" 
       type="button"
       >Aggiungi</button>
