@@ -22,6 +22,6 @@ if(isset($_POST['newDiscoTitle'])){
 // trasformo il file php come se fosse un file json
 header('Content-Type: application/json');
 
-// stampo la lista nuovamente trasformata in stringa
+// stampo la lista nuovamente trasformata in stringa.
 echo json_encode($dischi);  //qui la lista dischi è aggiornata
 ?>
